@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hotel Bookings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Josefin+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>BOOK YOUR ROOM</h1>
+    </header>
+    <main>
+      <p>To make a reservation please compleate the form below:</p>
+      <form action="processBookingWithPrice.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br>
+        <label for="date-of-birth">Date of Birth:</label>
+        <input type="date" id="date-of-birth" name="date-of-birth"><br>       
+        <label for="check-in">Check-in date:</label>
+        <input type="date" id="check-in" name="check-in" required><br>
+        <label for="check-out">Check-out date:</label>
+        <input type="date" id="check-out" name="check-out" required><br>
+        <label for="room-type">Room type:</label>
+        <select id="room-type" name="room-type" required>
+          <option value="twin">Twin</option>
+          <option value="double">Double</option>
+          <option value="deluxe">Deluxe</option>
+        </select><br>
+        <label class="inline" for="breakfast">Would you like to request a breakfast?</label>
+        <input class="inline" type="checkbox" id="breakfast" name="breakfast"><br>
+        <label class="inline" for="airoport-pickup">Do you need a transfer from the airport?</label>
+        <input class="inline" type="checkbox" id="airoport-pickup" name="airoport-pickup"><br><br>
+        <label for="comment">Comment:</label>
+        <textarea id="comments" name="comment" rows="5" cols="40"></textarea><br>
+        <input type="submit" value="Book Room">
+      </form>
+    </main>
+  </body>
+</html>
