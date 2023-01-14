@@ -3,12 +3,12 @@ Final project for Science In Computing course
 
 
 
-##the database:
+## the database:
 
 homewoodhotel.sql
 
-username "root"; password ""
+username: "root"; password: ""
 
-##Script for testing the database connection:
+## Script for testing the database connection:
 
 dbConnect.php
